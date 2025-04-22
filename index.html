@@ -10,8 +10,28 @@
 </head>
 <body>
     <header>
-        <h1>Calculadora de Gastos Mensais</h1>
+        <h1>Calculadora de Gastos Mensais:</h1>
     </header>
+    <main>
+        <section class="calculator">
+            <form id="gastos-form">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" placeholder="Ex: Lanche" required>
+
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" placeholder="Ex: 25.50" step="0.01" required>
+                
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="" disabled selected>Selecione uma categoria</option>
+                    <option value="alimentacao">Alimentação</option>
+                    <option value="transporte">Transporte</option>
+                    <option value="mercado">Mercado</option>
+                    <option value="lazer">Lazer</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+
 
     
 </body>
